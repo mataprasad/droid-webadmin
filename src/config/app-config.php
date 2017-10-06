@@ -10,7 +10,7 @@ $config = [
         ],
         'determineRouteBeforeAppMiddleware' => false,
         'displayErrorDetails' => true,
-        'db' => [
+        /*'db' => [
             'driver' => 'mysql',
             'host' => '127.0.0.1',
             'database' => 'db-scott',
@@ -19,6 +19,12 @@ $config = [
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
+        ]*/
+
+        'db' =>[
+            'driver' => 'sqlite',
+            'database' => __DIR__.'/../db/db-droid.db',
+            'prefix' => ''
         ]
     ],
 ];

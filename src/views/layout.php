@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Trans Corp</title>
+      <title>Lion's Attendance</title>
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <link rel="stylesheet" href="<?php HREF("/ui/bootstrap/css/bootstrap.min.css");?>">
       <link rel="stylesheet" href="<?php HREF("/ui/font-awesome/css/font-awesome.min.css");?>">
@@ -51,9 +51,9 @@
               <!-- Logo -->
               <a href="<?php HREF("/");?>" class="logo">
                   <!-- mini logo for sidebar mini 50x50 pixels -->
-                  <span class="logo-mini"><b>T</b>C</span>
+                  <span class="logo-mini"><b>L</b> A</span>
                   <!-- logo for regular state and mobile devices -->
-                  <span class="logo-lg"><b>Trans</b>Corp</span>
+                  <span class="logo-lg"><b>Lion's</b> Attendance</span>
               </a>
               <!-- Header Navbar: style can be found in header.less -->
               <nav class="navbar navbar-static-top">
@@ -74,7 +74,7 @@
                               </a>
                           </li>
                           <li class="dropdown messages-menu pull-right">
-                              <a href="#">
+                              <a href="<?php HREF("/log-out");?>">
                                   Logout&nbsp;&nbsp;<i class="fa fa-sign-out"></i>
                               </a>
                           </li>
@@ -90,18 +90,6 @@
                   <ul class="sidebar-menu" data-widget="tree">
                       <li class="treeview active">
                           <a href="#">
-                              <i class="fa fa-th"></i>
-                              <span>Entries</span>
-                              <span class="pull-right-container">
-  
-                              </span>
-                          </a>
-                          <ul class="treeview-menu">
-                              <li><a href="@Url.Action("index","dispatch")"><i class="fa fa-circle-o"></i> Dispatch Enteries</a></li>
-                          </ul>
-                      </li>
-                      <li class="treeview active">
-                          <a href="#">
                               <i class="fa fa-files-o"></i>
                               <span>Masters</span>
                               <span class="pull-right-container">
@@ -109,13 +97,10 @@
                               </span>
                           </a>
                           <ul class="treeview-menu">
-                              <li><a href="@Url.Action("index","destination")"><i class="fa fa-circle-o"></i> Destinations</a></li>
-                              <li><a href="@Url.Action("index","consignor")"><i class="fa fa-circle-o"></i> Consignors</a></li>
-                              <li><a href="@Url.Action("index","consignee")"><i class="fa fa-circle-o"></i> Consingees</a></li>
-                              <li><a href="@Url.Action("index","subdealer")"><i class="fa fa-circle-o"></i> Sub-Dealers</a></li>
-                              <li><a href="@Url.Action("index","transporter")"><i class="fa fa-circle-o"></i> Transporters</a></li>
-                              <li><a href="@Url.Action("index","truck")"><i class="fa fa-circle-o"></i> Trucks</a></li>
-                              <li><a href="@Url.Action("index","article")"><i class="fa fa-circle-o"></i> Articles</a></li>
+                              <li><a href="<?php HREF("/employee/index");?>"><i class="fa fa-circle-o"></i> Employees</a></li>
+                              <li><a href="<?php HREF("/location/index");?>"><i class="fa fa-circle-o"></i> Locations</a></li>
+                              <li><a href="<?php HREF("/attendance/index");?>"><i class="fa fa-circle-o"></i> Attendances</a></li>
+                              <li><a href="<?php HREF("/emp-location/index");?>"><i class="fa fa-circle-o"></i> Employee's Locations</a></li>
                           </ul>
                       </li>
                       <li class="treeview active">
@@ -128,25 +113,6 @@
                           </a>
                           <ul class="treeview-menu">
                               <li><a href="<?php HREF("/reports/full");?>"><i class="fa fa-circle-o"></i> Full Report</a></li>
-                              <li><a href="<?php HREF("/reports/truck");?>"><i class="fa fa-circle-o"></i> Truck-Wise Report</a></li>
-                              <li><a href="<?php HREF("/reports/consignee");?>"><i class="fa fa-circle-o"></i> Consingee-Wise Report</a></li>
-                              <li><a href="<?php HREF("/reports/consigner");?>"><i class="fa fa-circle-o"></i> Consigner-Wise Report</a></li>
-                              <li><a href="<?php HREF("/reports/sub-dealer");?>"><i class="fa fa-circle-o"></i> Sub-Dealers-Wise Report</a></li>
-                              <li><a href="<?php HREF("/reports/destination");?>"><i class="fa fa-circle-o"></i> Destination-Wise Report</a></li>
-                          </ul>
-                      </li>
-                      <li class="treeview active">
-                          <a href="#">
-                              <i class="fa fa-files-o"></i>
-                              <span>Administration</span>
-                              <span class="pull-right-container">
-  
-                              </span>
-                          </a>
-                          <ul class="treeview-menu">
-                              <li><a href="@Url.Action("index","company")"><i class="fa fa-circle-o"></i> Company</a></li>
-                              <li><a href="@Url.Action("index","branch")"><i class="fa fa-circle-o"></i> Branch</a></li>
-                              <li><a href="@Url.Action("index","user")"><i class="fa fa-circle-o"></i> Users</a></li>
                           </ul>
                       </li>
                   </ul>
